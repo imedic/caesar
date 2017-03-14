@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Generator Cezarove Šifre</title>
+    <link rel="stylesheet" type="text/css" href="/content/css/main.css">
+
+    <script src="/scripts/app.js"></script>
+
+    <link href="https://fonts.googleapis.com/css?family=Righteous" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500" rel="stylesheet">
+</body>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1>Cezarova šifra</h1>
+        <div class="form-group">
+            <h2>Upiši pomak</h2>
+            <input type="number" id="shift-amount" />
+        </div>
+        <div class="checkbox-container">
+            <span>Enkriptiraj</span>
+            <div class="checkbox-replacement">
+                <input type="checkbox" name="switch" id="switch">
+                <label for="switch"></label>
+            </div>
+            <span for="switch">Dekriptiraj</span>
+        </div>
+        <div class="user-input-container">
+            <textarea name="Poruka" class="user-input-textarea" placeholder="Unesi tekst" id="textarea"></textarea>
+            <div class="user-input-translation" id="result">
+            </div>
+        </div>
+        <div class="cta-container">
+            <button class="cta" id="cta">Prevedi</button>
+        </div>
+    </div>
+</body>
+
+</html>
